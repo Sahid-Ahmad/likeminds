@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: auto;
+    background-color: #f8f9fa;
+    width: 80%;
+    
+}
+
+.photo-upload-container {
+    display: left;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.photo-preview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url('/image/default-profile.png'); /* Path to your default image */
+    background-size: auto;
+    background-position: center;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.upload-btn {
+    border: 1px solid #ccc;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Form grid layout */
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+/* Full width columns */
+.col-12 {
+    grid-column: span 4;
+}
+
+.col-md-1 {
+    grid-column: span 2;
+}
+
+.col-13 {
+ grid-column: span 12;   
+}
+
+.col-md-7 {
+    grid-column: span 3;
+}
+/* Half width columns */
+.col-md-6 {
+    grid-column: span 3;
+}
+
+/* One third width columns */
+.col-md-4 {
+    grid-column: span 2;
+}
+
+/* One sixth width columns */
+.col-md-2 {
+    grid-column: span 2;
+}
+
+.col-md-5 {
+    grid-column: span 3;
+    display: ;
+}
+/* Form control styling */
+.form-control, .form-select {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Form check styling */
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+/* Form label styling */
+.form-label {
+    font-weight: bold;
+    margin-top: 10px;
+}

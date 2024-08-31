@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Like Minds Company (SL) Ltd</title>
+    <link rel="stylesheet" href="/css/signin.css">
+</head>
+<body>
+    <div class="signin-container">
+        <h1>Welcome to <strong>Like Minds Company (SL) Ltd</strong></h1>
+
+        <!-- User Category Selection -->
+        <div class="form-group">
+            <label for="signinCategory" class="form-label">User Category*</label>
+            <select id="signinCategory" class="form-select" required>
+                <option value="" selected>Select Category</option>
+                <option value="admin">Admin</option>
+                <option value="staff">Staff</option>
+                <option value="client">Client</option>
+            </select>
+        </div>
+
+        <!-- Username and Password -->
+        <div class="form-group">
+            <label for="signinUsername" class="form-label">Username*</label>
+            <input type="text" class="form-control" id="signinUsername" placeholder="Enter your username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="signinPassword" class="form-label">Password*</label>
+            <input type="password" class="form-control" id="signinPassword" placeholder="Enter your password" required>
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="btn btn-primary" onclick="handleSignIn()">Sign In</button>
+        </div>
+
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+    <script>
+        function handleSignIn() {
+            const category = document.getElementById('signinCategory').value;
+            const username = document.getElementById('signinUsername').value;
+            const password = document.getElementById('signinPassword').value;
+
+            // Simple validation check
+            if (category && username && password) {
+                // Simulate successful sign-in by redirecting to the dashboard
+                window.location.href = 'dashboard.html';
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    transition: all 0.3s;
+    overflow-y: auto;
+}
+
+.sidebar .user-profile img {
+    object-fit: cover;
+    border-radius: 20%;
+    display: block;
+}
+
+.header{
+    position: fixed;
+}
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    transition: all 0.3s;
+    background-color: #f8f9fa;
+    min-height: 300vh;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    .main-content {
+        margin-left: 100%
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 50%;
+    }
+}

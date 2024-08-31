@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Minds Company (SL) Ltd</title>
+    <link rel="stylesheet" href="/css/mobile.css">
+</head>
+<body>
+  <h1>Welcome to Like Minds Mobile Distribution Company Platform</h1>
+  <h2><strong><em>Customer's Information</em></strong></h2>
+  
+  <div class="form-container">
+    <div class="photo-upload-container">
+      <div class="photo-preview" id="photoPreview"></div>
+      <div class="upload-btn-wrapper">
+        <button class="upload-btn">Upload Photo*</button>
+        <input type="file" id="inputPhoto" accept=".jpeg, .jpg, .png" required onchange="loadFile(event)" required>
+      </div>
+    </div>
+
+    <form class="row g-3" id="customerForm" action="nextofkin.html" method="GET">
+      <div class="col-md-1">
+        <label for="inputTitle" class="form-label">Title*</label>
+        <select id="inputTitle" class="form-select" required>
+            <option selected>Select</option>
+            <option>Mr.</option>
+            <option>Mrs.</option>
+            <option>Ms.</option>
+            <option>Dr.</option>
+            <option>Rev.</option>
+            <option>Imam</option>
+        </select>
+      </div>
+      
+      <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Other Name(s)*</label><br>
+          <input type="text" class="form-control" id="inputFirstName" placeholder="Like Minds" required>
+      </div>
+
+      <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Last Name*</label><br>
+          <input type="text" class="form-control" id="inputFirstName" placeholder="Company" required>
+      </div>
+
+      <div class="col-md-6">
+          <label for="inputDateofBirth" class="form-label">Date of Birth*</label><br>
+          <input type="date" class="form-control" id="calendar" placeholder="01/01/000" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="inputGender" class="form-label">Select Gender*</label>
+        <select id="inputGender" class="form-select" required>
+            <option selected>Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Rather Not</option>
+        </select>
+    </div>
+
+    <div class="col-md-4">
+      <label for="inputMaritalStatus" class="form-label">Marital Status*</label>
+      <select id="inputState" class="form-select" required>
+          <option selected>Select</option>
+          <option>Single</option>
+          <option>Married</option>
+          <option>Divorced</option>
+          <option>Widowed</option>
+          <option>Seperated</option>
+      </select>
+  </div>
+
+  <div class="col-md-7">
+    <label for="inputtel" class="form-label">Phone Number*</label><br>
+    <input type="text" class="form-control" id="inputtele" placeholder="23277000000" required>
+</div>
+
+<div class="col-md-7">
+    <label for="inputEmail" class="form-label">Email*</label><br>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="likeminds.co@gmail.com" required>
+</div>
+
+<div class="col-md-6">
+          <label for="inputPlaceofBirth" class="form-label">place of Birth*</label><br>
+          <input type="text" class="form-control" id="inputPLaceofBirth" placeholder="Masiaka" required>
+      </div>
+
+      <div class="col-md-6">
+          <label for="inputResidentAddress" class="form-label">Resident Address*</label><br>
+          <input type="ResidentAddress" class="form-control" id="inputResidentAddress" placeholder="123 Main St" required>
+      </div>
+
+      <div class="col-md-6">
+          <label for="inputCity" class="form-label">City/Town*</label>
+          <input type="text" class="form-control" id="inputCity/Town" placeholder="Freetown" required>
+      </div>
+
+      <div class="col-md-4">
+          <label for="inputRegion_Provincet" class="form-label">Region/Province*</label>
+          <select id="inputRegion" class="form-select" required>
+              <option selected>Select</option>
+              <option>North</option>
+              <option>North-West</option>
+              <option>East</option>
+              <option>Western Urban</option>
+              <option>Western Rural</option>
+              <option>South</option>
+          </select>
+      </div>
+      
+      <div class="col-md-4">
+          <label for="inputDistrict" class="form-label">Select District*</label>
+          <select id="inputState" class="form-select" required>
+              <option selected>Select District</option>
+              <option>Western Urban</option>
+              <option>Western Rural</option>
+              <option>Bo</option>
+              <option>Makeni</option>
+              <option>Kemena</option>
+              <option>Kono</option>
+              <option>Tonkolili</option>
+              <option>Kambia</option>
+              <option>Port Loko</option>
+              <option>Kerene</option>
+              <option>Moyamba</option>
+              <option>Pujehun</option>
+              <option>Kailahun</option>
+              <option>Bonthe</option>
+              <option>Koinodugu</option>
+              <option>Falaba</option>
+          </select>
+      </div>
+
+      <div class="col-md-4">
+          <label for="inputReligion" class="form-label">Religion</label>
+          <select id="inputReligion" class="form-select">
+              <option selected>Select Religion</option>
+              <option>Islam</option>
+              <option>Chritianity</option>
+              <option>Rather Not</option>
+          </select>
+      </div>
+
+      <div class="col-md-4">
+        <label for="inputDisability" class="form-label">Disability*</label>
+        <select id="inputDisability" class="form-select" required>
+            <option value="">Select</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+      </div>
+  
+      <div class="col-md-4">
+        <label for="inputDisabilityStatus" class="form-label">Disability Status*</label>
+        <select id="inputDisabilityStatus" class="form-select" required>
+            <option value="">Select</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label for="inputStatus" class="form-label">ID Card Type</label>
+        <select id="inputStatus" class="form-select">
+            <option selected>Select</option>
+            <option>National ID Card</option>
+            <option>Passport Book</option>
+            <option>Drivers License</option>
+        </select>
+    </div>
+
+    <div class="col-md-2">
+          <label for="inputNIN" class="form-label">ID Card No.</label>
+          <input type="text" class="form-control" id="inputNIN" placeholder="NZY8PS0HH">
+      </div>
+      
+      <div class="col-md-4">
+        <label for="inputOccupation" class="form-label">Occucation</label>
+        <select id="inputReligion" class="form-select">
+            <option selected>SelectOccupation</option>
+            <option>Trading</option>
+            <option>Officer</option>
+            <option>Administrative</option>
+            <option>Civil Servant</option>
+            <option>Tribal Head</option>
+            <option>Clergy</option>
+            <option>Teaching</option>
+            <option>Nursing</option>
+            <option>Farming</option>
+            <option>Fishering</option>
+            <option>Driving</option>
+            <option>Others</option>
+        </select>
+    </div>
+
+      <div class="col-12">
+          <label for="inputBusinessAddress" class="form-label">Business/Office Address*</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Sani Abacha" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="inputPhoneType" class="form-label">Phone Type</label>
+        <select id="inputPhoneType" class="form-select">
+          <option selected>Select</option>
+          <option>Samsung A12</option>
+          <option>Samsung A13</option>
+          <option>Samsung A14</option>
+          <option>Samsung A21</option>
+          <option>Samsung A22</option>
+          <option>Samsung A23</option>
+          <option>Samsung A33</option>
+          <option>Samsung A54</option>
+          <option>Samsung A73</option>
+          <option>Samsung A72</option>
+          <option>Samsung A04s</option>
+          <option>Samsung A03</option>
+          <option>Samsung A05e</option>
+          <option>Samsung Note10+</option>
+          <option>Samsung Note20</option>
+          <option>Techno Camon 15</option>
+          <option>Techno Camon 12</option>
+          <option>Techno Camon 20 Pro</option>
+          <option>Techno Camon 30</option>
+        </select>
+      </div>
+  
+      <div class="col-md-4">
+        <label for="inputPhoneColour" class="form-label">Phone Colour</label>
+        <select id="inputPhoneType" class="form-select">
+          <option selected>Select</option>
+          <option>White</option>
+          <option>Red</option>
+          <option>Blue</option>
+          <option>Grey</option>
+          <option>Black</option>
+          <option>Yellow</option>
+          <option>Green</option>
+          <option>Royal Blue</option>
+          <option>Purple</option>
+          <option>Maroon</option>
+      </select>
+      </div>
+      <div class="col-md-2">
+          <label for="inputIMEINo." class="form-label">Phone IMEI No.</label>
+          <input type="text" class="form-control" id="inputIMEINo." placeholder="357611983871619" required>
+        </div>
+  
+        <div class="col-md-2">
+          <label for="inputAmount" class="form-label">Cost of Phone</label>
+          <input type="text" class="form-control" id="inputAmount" placeholder="Le 2,800.00" required>
+        </div>
+        
+        <div class="col-md-2">
+          <label for="inputAmount" class="form-label">Up front payment</label>
+          <input type="text" class="form-control" id="inputAmount" placeholder="Le 250.00" required>
+        </div>
+      
+        <div class="col-md-4">
+        <label for="inputModeofDeposit" class="form-label">Mode of Payment*</label>
+        <select id="inputStatus" class="form-select" required>
+            <option selected>Select</option>
+            <option>Daily</option>
+            <option>Weekly</option>
+            <option>Mothly</option>
+        </select>
+    </div>
+  
+  <div class="col-md-4">
+          <label for="inputStatus" class="form-label">Status*</label>
+          <select id="inputStatus" class="form-select" required>
+              <option selected>Select</option>
+              <option>Active</option>
+              <option>Archived</option>
+          </select>
+      </div>
+
+      <div class="col-13">
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="confirmCheck">
+              <label class="form-check-label" for="gridCheck">Confirm</label>
+          </div>
+      </div>
+      <div class="col-13">
+          <button type="submit" class="btn btn-primary">Save&Continue</button>
+      </div>
+  </form>
+  <script src="/JavaScript/script.js"></script>
+</body>
+</html>

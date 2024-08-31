@@ -1,0 +1,167 @@
+*{
+    padding: 0%;
+    margin: auto;
+}
+
+
+body {
+    margin: auto;
+    padding: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  
+  .navbar .navbar-nav .nav-item .nav-link.active {
+    color: #0056b3;
+    font-weight: bold;
+  }
+  
+  .navbar .navbar-nav .nav-item .nav-link.disabled {
+    color: #6c757d;
+  }
+  
+  .navbar .btn-group {
+    margin-left: 20px;
+  }
+  
+  .navbar .btn-group .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .navbar .btn-group .dropdown-menu {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+  }
+  
+  .container {
+    margin-top: 60px;
+  }
+  
+  .header_one {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header_one img {
+    margin-right: 15px;
+  }
+  
+  .header_one h1, .header_one h4, .header_one h5, .header_one h6 {
+    margin: 0;
+    padding: 0;
+  }
+  
+/* CSS for Header Section */
+.header_one {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header_one img {
+    margin-right: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header_one .container {
+    text-align: left;
+  }
+  
+  .header_one h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .header_one h4, .header_one h5, .header_one h6 {
+    margin: 5px 0;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .header_one h4 {
+    font-weight: bold;
+  }
+  
+  .header_one h5 {
+    font-weight: normal;
+    color: #007bff;
+  }
+  
+  .header_one h6 {
+    font-weight: normal;
+    color: #28a745;
+  }
+  
+.container {
+    padding: 0%;
+    position: relative;
+    text-overflow: ellipsis;
+    align-items: left;
+}
+
+.header_one{
+    background-color: orangered;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-style: normal;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_one img {
+    align-self: flex-start;
+    margin-left: 10px;
+
+}
+
+.header_one h1, 
+.header_one h4,
+.header_one h5, 
+.header_one h6 {
+      margin: 5px;
+      align-items: center;
+      text-align: center;
+      line-height: normal;
+      
+        }
+.btn-group {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+
+.btn-group .dropdown-item:hover {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.navbar {
+    background-color: cadetblue;
+    text-align: center;
+    float: left;
+    position: relative;
+
+}

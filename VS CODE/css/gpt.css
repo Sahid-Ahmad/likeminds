@@ -1,0 +1,46 @@
+.form-wizard {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.step-indicators {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step {
+    width: 25%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: #555;
+}
+
+.step.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.step-content {
+    display: none;
+}
+
+.step-content.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+button.next-step {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

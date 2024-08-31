@@ -1,0 +1,21 @@
+div {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+.container1 {
+    width: 200px;
+    background-color: aqua;
+}
+
+.container2 {
+    width: 200px;
+    background-color: blueviolet;
+}
+.container3 {
+    width: 200px;
+    background-color: rgb(255, 94, 0);
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Like Minds Company (SL) Ltd</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/nav.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar bg-dark text-white position-fixed vh-100">
+        <div class="d-flex flex-column h-100">
+            <!-- User Profile -->
+            <div class="text-center py-4 border-bottom">
+                <img src="path_to_user_photo.jpg" alt="User Photo" class="rounded-circle mb-2" width="100" height="100">
+                <h5 id="user-name">CEO</h5>
+                <span class="text-muted" id="user-role">Administrator</span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="accordion accordion-flush mt-4" id="sidebarMenu">
+                <!-- Dashboard -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingDashboard">
+                        <button class="accordion-button collapsed text-white" style="background-color: #007bff;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDashboard" aria-expanded="false" aria-controls="collapseDashboard">
+                            <i class="bi bi-speedometer2 me-2"></i> Dashboard
+                        </button>
+                    </h2>
+                    <div id="collapseDashboard" class="accordion-collapse collapse" aria-labelledby="headingDashboard">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">Overview</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Analytics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Admin -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingAdmin">
+                        <button class="accordion-button collapsed text-white" style="background-color: #6c757d;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">
+                            <i class="bi bi-shield-lock me-2"></i> Admin
+                        </button>
+                    </h2>
+                    <div id="collapseAdmin" class="accordion-collapse collapse" aria-labelledby="headingAdmin">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">User Management</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">System Settings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Supervisor -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSupervisor">
+                        <button class="accordion-button collapsed text-white" style="background-color: #28a745;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSupervisor" aria-expanded="false" aria-controls="collapseSupervisor">
+                            <i class="bi bi-people me-2"></i> Supervisor
+                        </button>
+                    </h2>
+                    <div id="collapseSupervisor" class="accordion-collapse collapse" aria-labelledby="headingSupervisor">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="list-unstyled">
+                                <li><a href="Employee.html" class="text-white text-decoration-none">Add Staff</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">View Staff List</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Add Customer</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">View Customers List</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Services -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFinancialServices">
+                        <button class="accordion-button collapsed text-white" style="background-color: #2af3d2;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFinancialServices" aria-expanded="false" aria-controls="collapseFinancialServices">
+                            <i class="bi bi-currency-dollar me-2"></i> Financial Services
+                        </button>
+                    </h2>
+                    <div id="collapseFinancialServices" class="accordion-collapse collapse" aria-labelledby="headingFinancialServices">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="list-unstyled">
+                                <!-- Osusu Menu -->
+                                <li>
+                                    <a href="#" class="text-white text-decoration-none" data-bs-toggle="collapse" data-bs-target="#osusuSubmenu" aria-expanded="false" aria-controls="osusuSubmenu">Osusu</a>
+                                    <ul class="collapse list-unstyled" id="osusuSubmenu">
+                                        <li><a href="Osusu.html" class="text-white text-decoration-none">Add Osusu Customer</a></li>
+                                        <li><a href="#" class="text-white text-decoration-none">View Osusu Customers</a></li><hr>
+                                    </ul>
+                                </li>
+                        
+                                <!-- Microfinance Menu -->
+                                <li>
+                                    <a href="#" class="text-white text-decoration-none" data-bs-toggle="collapse" data-bs-target="#microfinanceSubmenu" aria-expanded="false" aria-controls="microfinanceSubmenu">Microfinance</a>
+                                    <ul class="collapse list-unstyled" id="microfinanceSubmenu">
+                                        <li><a href="#" class="text-white text-decoration-none">Add Loan Customer</a></li>
+                                        <li><a href="#" class="text-white text-decoration-none">View Loan Customers</a></li><hr>
+                                    </ul>
+                                </li><br>
+                                
+                                <!-- Remittance Menu -->
+                                <li>
+                                    <a href="#" class="text-white text-decoration-none" data-bs-toggle="collapse" data-bs-target="#remittanceSubmenu" aria-expanded="false" aria-controls="remittanceSubmenu">Remittance</a>
+                                    <ul class="collapse list-unstyled" id="remittanceSubmenu">
+                                        <li><a href="#" class="text-white text-decoration-none">Pay Customer</a></li>
+                                        <li><a href="#" class="text-white text-decoration-none">Transfer to Customer</a></li><hr>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product(s) -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingProduct">
+                        <button class="accordion-button collapsed text-white" style="background-color: #f8b90b;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+                            <i class="bi bi-box-seam me-2"></i> Product
+                        </button>
+                    </h2>
+                    <div id="collapseProduct" class="accordion-collapse collapse" aria-labelledby="headingProduct">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="list-unstyled">
+                                <!-- Mobile Menu -->
+                                <li>
+                                    <a href="#" class="text-white text-decoration-none" data-bs-toggle="collapse" data-bs-target="#mobileSubmenu" aria-expanded="false" aria-controls="mobileSubmenu">Mobile Phone</a>
+                                    <ul class="collapse list-unstyled" id="mobileSubmenu">
+                                        <li><a href="mobile.html" class="text-white text-decoration-none">Add Phone Customer</a></li>
+                                        <li><a href="#" class="text-white text-decoration-none">View Mobile Payment</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Accountant -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingAccountant">
+                        <button class="accordion-button collapsed text-white" style="background-color: #17a2b8;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccountant" aria-expanded="false" aria-controls="collapseAccountant">
+                            <i class="bi bi-cash-stack me-2"></i> Accountant
+                        </button>
+                    </h2>
+                    <div id="collapseAccountant" class="accordion-collapse collapse" aria-labelledby="headingAccountant">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">Transaction Report</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Generate Report</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Report Summary</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+             <!-- Employee -->
+             <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEmployee">
+                    <button class="accordion-button collapsed text-white" style="background-color: #6f0bf1;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmployee" aria-expanded="false" aria-controls="collapseEmployee">
+                        <i class="bi bi-people me-2"></i> Employee
+                    </button>
+                </h2>
+                <div id="collapseEmployee" class="accordion-collapse collapse" aria-labelledby="headingEmployee">
+                    <div class="accordion-body bg-secondary">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">View Staff List</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Salary</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Reports</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Vendors -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingVendors">
+                        <button class="accordion-button collapsed text-white" style="background-color: #b9230d;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVendors" aria-expanded="false" aria-controls="collapseVendors">
+                            <i class="bi bi-shop-window me-2"></i> Vendors
+                        </button>
+                    </h2>
+                    <div id="collapseVendors" class="accordion-collapse collapse" aria-labelledby="headingVendors">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">Add Vendor</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">View Vendor List</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Vendor Reports</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clients -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingClients">
+                        <button class="accordion-button collapsed text-white" style="background-color: #8c03fc;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClients" aria-expanded="false" aria-controls="collapseClients">
+                            <i class="bi bi-person me-2"></i> Customer
+                        </button>
+                    </h2>
+                    <div id="collapseClients" class="accordion-collapse collapse" aria-labelledby="headingClients">
+                        <div class="accordion-body bg-secondary">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">Add Customer</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Customer List</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Customer's Records</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Navigation Menu -->
+
+            <!-- Logout -->
+            <div class="mt-auto py-4 border-top text-center">
+                <a href="#" class="btn btn-outline-light">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <main class="content p-4">
+        <div class="main-content" style="margin-left: 250px;">
+            <!-- Header Bar -->
+            <header class="bg-primary shadow-sm py-3 px-4 d-flex justify-content-between align-items-center text-white">
+                <div class="d-flex align-items-center">
+                    <img src="/image/likeminds logo.jpg" alt="Company Logo" class="logo me-3" style="height: 50px;">
+                    <h2 class="h5 mb-0">Like Minds Company (SL) Ltd</h2>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div id="user-profile" class="me-3">
+                        <span id="user-name-header">Brima</span>
+                        <img src="path_to_user_photo.jpg" alt="User Photo" class="rounded-circle" width="40" height="40">
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        <h1>Welcome to the Dashboard</h1>
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
